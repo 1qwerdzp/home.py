@@ -41,8 +41,67 @@ while True:
                         p2+=[1]
                         tx1=font.render("2", True, (0, 0, 0))
                     pa+=[1]
+                    
+            elif 120<x<190 and 30<y<120 and int(pa.count(2))!=1:
+                if p==0:
+                    p1+=[2]
+                    tx2=font.render("1", True, (0, 0, 0))
+                if p==1 :
+                    p2+=[2]
+                    tx2=font.render("2", True, (0, 0, 0))
+                pa+=[2]
+                
+            elif 210<x<280 and 30<y<120 and int(pa.count(3))!=1:
+                if p==0:
+                    p1+=[3]
+                    tx3=font.render("1", True, (0, 0, 0))
+                if p==1 :
+                    p2+=[3]
+                    tx3=font.render("2", True, (0, 0, 0))
+                pa+=[3]
+                
+            elif 30<x<100 and 140<y<230 and int(pa.count(4))!=1:
+                if p==0:
+                    p1+=[4]
+                    tx4=font.render("1", True, (0, 0, 0))
+                if p==1 :
+                    p2+=[4]
+                    tx4=font.render("2", True, (0, 0, 0))
+                pa+=[4]
+                
+            elif 120<x<190 and 140<y<230 and int(pa.count(5))!=1:
+                if p==0:
+                    p1+=[5]
+                    tx5=font.render("1", True, (0, 0, 0))
+                if p==1 :
+                    p2+=[5]
+                    tx5=font.render("2", True, (0, 0, 0))
+                pa+=[5]
+            elif 210<x<280 and 140<y<230 and int(pa.count(6))!=1:
+                if p==0:
+                    p1+=[6]
+                    tx6=font.render("1", True, (0, 0, 0))
+                if p==1 :
+                    p2+=[6]
+                    tx6=font.render("2", True, (0, 0, 0))
+                pa+=[6]
+            elif 210<x<280 and 250<y<340 and int(pa.count(7))!=1:
+                if p==0:
+                    p1+=[7]
+                    tx7=font.render("1", True, (0, 0, 0))
+                if p==1 :
+                    p2+=[7]
+                    tx7=font.render("2", True, (0, 0, 0))
+                pa+=[7]
+            elif 210<x<280 and 250<y<340 and int(pa.count(8))!=1:
+                if p==0:
+                    p1+=[6]
+                    tx8=font.render("1", True, (0, 0, 0))
+                if p==1 :
+                    p2+=[8]
+                    tx8=font.render("2", True, (0, 0, 0))
+                pa+=[8]
             elif 210<x<280 and 250<y<340 and int(pa.count(9))!=1:
-                print(2)
                 if p==0:
                     p1+=[9]
                     tx9=font.render("1", True, (0, 0, 0))
@@ -55,22 +114,22 @@ while True:
             else :
                 p=0
     if int(pa.count(1))==1 :
-        SC.blit(tx1, (25+m, 25+m1))
+        SC.blit(tx1, (20+m, 20+m1))
     if int(pa.count(2))==1 :
-        SC.blit(tx2, (95+m, 115+m1))
+        SC.blit(tx2, (110+m, 20+m1))
     if int(pa.count(3))==1 :
-        SC.blit(tx3, (25+m, 25+m1))
+        SC.blit(tx3, (200+m, 20+m1))
     if int(pa.count(4))==1 :
-        SC.blit(tx4, (25+m, 25+m1))
+        SC.blit(tx4, (20+m, 130+m1))
     if int(pa.count(5))==1 :
-        SC.blit(tx5, (25+m, 25+m1))
+        SC.blit(tx5, (110+m, 130+m1))
     if int(pa.count(6))==1 :
-        SC.blit(tx6, (25+m, 25+m1))
+        SC.blit(tx6, (200+m, 130+m1))
     if int(pa.count(7))==1 :
-        SC.blit(tx7, (25+m, 25+m1))
+        SC.blit(tx7, (20+m, 240+m1))
     if int(pa.count(8))==1 :
-        SC.blit(tx8, (25+m, 25+m1))
+        SC.blit(tx8, (110+m, 240+m1))
     if int(pa.count(9))==1 :
-        SC.blit(tx9, (275+m, 335+m1))
+        SC.blit(tx9, (200+m, 240+m1))
     pygame.display.update()
     CL.tick(1)
